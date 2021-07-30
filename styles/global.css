@@ -24,6 +24,7 @@ html {
 body {
   height: 100vh;
   background: var(--background);
+  display: flex;
 }
 
 body,
@@ -36,7 +37,7 @@ textarea {
 
 .content {
   width: 100%;
-  margin: 0 auto;
+  margin: 0 10rem;
 }
 
 .sr-only {
@@ -53,7 +54,7 @@ textarea {
 
 .content header img {
   width: 10rem;
-  margin: 2rem 10rem;
+  margin: 2rem 0rem;
 }
 
 input,
@@ -62,9 +63,14 @@ input,
   height: 3.125rem;
 }
 
+input::placeholder,
+textarea::placeholder {
+  color: var(--icons-details);
+}
+
 .button {
   font-family: 'Poppins';
-  font-weight: 500;
+  font-weight: 400;
   line-height: 0;
 
   display: flex;
@@ -84,7 +90,7 @@ input,
 }
 
 .button img {
-  margin-right: 1rem;
+  margin-right: 0.5rem;
   width: 1.2rem;
 }
 
