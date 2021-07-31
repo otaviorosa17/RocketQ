@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+input {
+  outline: none;
+}
+
 html {
   --black: #0d114f;
   --white: #fafafa;
@@ -19,6 +23,8 @@ html {
   --dark-grey: #4d5e77;
   --blue-grey: #a1b2cd;
   --light-grey: #e5eaf1;
+  --low-opacity-gray: #eaecf2;
+  --shadow-color: rgb(4, 9, 17, 0.5);
 }
 
 body {
@@ -85,7 +91,17 @@ textarea::placeholder {
   transition: filter 0.2s;
 }
 
-.button:hover {
+.button.red {
+  background: var(--red);
+  color: var(--white);
+}
+
+.button.grey {
+  background: var(--light-grey);
+  color: var(--dark-grey);
+}
+
+.button .button:hover {
   filter: brightness(1.1);
 }
 
