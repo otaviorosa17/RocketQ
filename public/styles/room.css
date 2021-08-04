@@ -126,3 +126,29 @@
 .question-wrapper.read .user {
   background: var(--blue-grey);
 }
+
+.empty {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.empty img {
+  max-width: 100%;
+  margin-bottom: 0.75rem;
+}
+
+.empty p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--black);
+  margin-bottom: 0.8rem;
+}
+
+.empty p + p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--dark-grey);
+  line-height: 1.3rem;
+}
